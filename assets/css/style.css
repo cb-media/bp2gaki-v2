@@ -2,12 +2,27 @@ body {
   width: 85%;
   margin: auto; }
 
+.bg-based,
+.btn-based {
+  background: #3ECF8E !important;
+  color: #fff !important; }
+
+.link-accordion {
+  color: #fff;
+  text-decoration: none; }
+  .link-accordion:hover {
+    color: #fff;
+    text-decoration: none; }
+
 .navbar {
   background: #2AEA95 !important; }
+  .navbar .navbar-brand img {
+    width: 100px;
+    height: 45px; }
   .navbar .dropdown-menu {
     border-radius: 0px;
     position: absolute;
-    top: -80px;
+    top: -85px;
     background-color: #2AEA95 !important; }
     .navbar .dropdown-menu .dropdown-item {
       color: #fff; }
@@ -22,7 +37,7 @@ body {
     right: 6px;
     top: .8em; }
   .navbar .dropdown-submenu .dropdown-menu {
-    top: -80px;
+    top: -90px !important;
     left: 100%;
     margin-left: .1rem;
     margin-right: .1rem; }
@@ -55,3 +70,6 @@ footer {
   background: #2AEA95 !important; }
   footer button:hover {
     color: #2AEA95 !important; }
+
+#modalSurvey .fa {
+  color: #EEFE2E; }

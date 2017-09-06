@@ -4,12 +4,33 @@ body {
     margin: auto;
 }
 
+.bg-based,
+.btn-based {
+    background: #3ECF8E !important;
+    color: #fff !important;
+}
+
+.link-accordion {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
 .navbar {
     background: #2AEA95 !important;
+    .navbar-brand {
+        img {
+            width: 100px;
+            height: 45px;
+        }
+    }
     .dropdown-menu {
         border-radius: 0px;
         position: absolute;
-        top: -80px;
+        top: -85px;
         background-color: #2AEA95 !important;
         .dropdown-item {
             color: #fff;
@@ -29,7 +50,7 @@ body {
         top: .8em;
     }
     .dropdown-submenu .dropdown-menu {
-        top: -80px;
+        top: -90px !important;
         left: 100%;
         margin-left: .1rem;
         margin-right: .1rem;
@@ -78,5 +99,11 @@ footer {
     background: #2AEA95 !important;
     button:hover {
         color: #2AEA95 !important;
+    }
+}
+
+#modalSurvey {
+    .fa {
+        color: #EEFE2E;
     }
 }
