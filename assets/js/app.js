@@ -50,9 +50,13 @@ $('body').on('mouseenter mouseleave', '.dropdown', function(e) {
     }, 300);
 });
 
+// Redirect ke halaman survey ketika diclose
+
 function responseSurveyFirst() {
     return window.location.href = 'survey-pengunjung.html';
 }
+
+// Modal Survey
 
 var pageLocation = '/survey-pengunjung.html';
 var halamanException = pageLocation;
@@ -63,8 +67,10 @@ if (location.pathname == halamanException) {
 
     setTimeout(function() {
         $('#modalSurvey').modal('show');
-    }, 5000);
+    }, 15000);
 }
+
+// Tagging and Hashing Profile
 
 $(window).on('hashchange', function(e) {
     getLastURI(location.href.substr(location.href.lastIndexOf('/') + 13));
