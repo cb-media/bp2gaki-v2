@@ -58,13 +58,12 @@ function responseSurveyFirst() {
 
 // Modal Survey
 
-var pageLocation = '/survey-pengunjung.html';
-var halamanException = pageLocation;
+// var pageLocation = '/survey-pengunjung.html';
+// var halamanException = pageLocation;
 
-if (location.pathname == halamanException) {
+if (location.pathname != '/index.html') {
     $('#modalSurvey').modal('hide');
 } else {
-
     setTimeout(function() {
         $('#modalSurvey').modal('show');
     }, 15000);
